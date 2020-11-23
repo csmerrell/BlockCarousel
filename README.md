@@ -1,5 +1,5 @@
 # Block Carousel
-A simple fading carousel VueJS component designed to showcase code samples.
+A simple fading carousel [VueJS](https://vuejs.org) component designed to showcase code samples.
 
 ## Usage
 First, import the js and css files:
@@ -72,7 +72,7 @@ It won't work yet, because we need a vue instance to manage it.
 </script>
 ```
 
-That's the basic instance. Not much use without some code samples to go inside the contents!
+That's the basic instance. It's not much use, though, without some code samples to go inside the contents.
 
 ## Binding Block Content
 The two blocks in the samples just have plain text in them, which doesn't pick up the carousel's styling properly. We can convert that to code:
@@ -173,7 +173,7 @@ Lets look at the block actions from up above:
 
 The first one works as is. It takes an href (string), and an optional `target="_blank"` attr (Currently, "_blank" is the only supported target value, because my time is limited).
   
-  
+
 The second one says it wants to call a function, but no function is provided to it. Let's fix that:
 
 ```html
