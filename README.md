@@ -172,7 +172,8 @@ Lets look at the block actions from up above:
 ```
 
 The first one works as is. It takes an href (string), and an optional `target="_blank"` attr (Currently, "_blank" is the only supported target value, because my time is limited).
- \  
+  
+  
 The second one says it wants to call a function, but no function is provided to it. Let's fix that:
 
 ```html
