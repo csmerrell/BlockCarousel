@@ -1,0 +1,176 @@
+body {
+    font-family: "Roboto", "Verdana";
+    font-size: 18px;
+    color: var(--clr-fonts-base); }
+    body .pure-g [class*="pure-u"] {
+      font-family: "Roboto", "Verdana"; }
+    body h1, body h2, body h3, body h4, body h5, body h6 {
+      font-family: "Roboto", "Verdana";
+      font-weight: 300; }
+    body h1 {
+      font-size: 58px; }
+    body h2 {
+      font-size: 38px; }
+    body h3 {
+      font-size: 24px; }
+    body h4, body h5, body h6 {
+      font-size: 18px; }
+    body b {
+      font-weight: 600; }
+    @media (max-width: 640px) {
+      body h1 {
+        font-size: 44px; } }
+    @media (max-width: 408px) {
+      body h1 {
+        font-size: 38px; } }
+  
+  :root {
+    font-size: 18px; }
+  
+  .bc-block-carousel {
+    position: relative; }
+    .bc-block-carousel .bc-block {
+      z-index: 1;
+      height: 42rem;
+      overflow: hidden; }
+      .bc-block-carousel .bc-block .bc-block-title {
+        position: absolute;
+        right: 0;
+        width: 100%;
+        text-align: center; }
+        .bc-block-carousel .bc-block .bc-block-title h1 {
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          margin: 0;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          z-index: 100; }
+      .bc-block-carousel .bc-block .bc-block-content {
+        position: relative;
+        background: var(--clr-bg-alt);
+        padding-top: 6em !important; }
+        .bc-block-carousel .bc-block .bc-block-content pre, .bc-block-carousel .bc-block .bc-block-content code {
+          height: calc(42rem - 6em);
+          overflow: hidden; }
+        .bc-block-carousel .bc-block .bc-block-content .code-slot {
+          position: relative; }
+          .bc-block-carousel .bc-block .bc-block-content .code-slot:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -1rem;
+            bottom: 0;
+            width: 4rem;
+            background: -moz-linear-gradient(left, rgba(var(--clr-bg-alt-rgb), 0) 0%, rgba(var(--clr-bg-alt-rgb), 1) 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(left, rgba(var(--clr-bg-alt-rgb), 0) 0%, rgba(var(--clr-bg-alt-rgb), 1) 100%);
+            /* FF3.6-15 */
+            background: linear-gradient(to right, rgba(var(--clr-bg-alt-rgb), 0) 0%, rgba(var(--clr-bg-alt-rgb), 1) 100%);
+            /* FF3.6-15 */ }
+        @media (max-width: 768px) {
+          .bc-block-carousel .bc-block .bc-block-content .code-slot:after {
+            display: none; } }
+        .bc-block-carousel .bc-block .bc-block-content.fade-container {
+          position: relative; }
+          .bc-block-carousel .bc-block .bc-block-content.fade-container .fade-out-bottom {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 8rem;
+            background: -moz-linear-gradient(top, rgba(var(--clr-bg-alt-rgb), 0) 0%, rgba(var(--clr-bg-alt-rgb), 1) 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, rgba(var(--clr-bg-alt-rgb), 0) 0%, rgba(var(--clr-bg-alt-rgb), 1) 100%);
+            /* FF3.6-15 */
+            background: linear-gradient(to bottom, rgba(var(--clr-bg-alt-rgb), 0) 0%, rgba(var(--clr-bg-alt-rgb), 1) 100%);
+            /* FF3.6-15 */ }
+      @media (min-width: 641px) and (max-width: 768px) {
+        .bc-block-carousel .bc-block .bc-block-content {
+          padding-top: 8em !important; }
+          .bc-block-carousel .bc-block .bc-block-content pre {
+            height: calc(42rem - 8em); } }
+      .bc-block-carousel .bc-block .bc-block-action-list {
+        position: absolute;
+        bottom: 3rem;
+        width: 100%;
+        text-align: center; }
+        .bc-block-carousel .bc-block .bc-block-action-list .bc-block-action-container {
+          position: relative;
+          bottom: 0;
+          width: auto;
+          display: inline-block;
+          margin: .5rem; }
+      .bc-block-carousel .bc-block .bc-block-action-container {
+        position: absolute;
+        bottom: 3rem;
+        width: 100%;
+        text-align: center;
+        z-index: 10; }
+        .bc-block-carousel .bc-block .bc-block-action-container .bc-block-action {
+          font-size: 24px;
+          box-shadow: 0 0 1rem var(--clr-bg-alt); }
+          .bc-block-carousel .bc-block .bc-block-action-container .bc-block-action a {
+            color: var(--clr-fonts-base);
+            text-decoration: none; }
+            .bc-block-carousel .bc-block .bc-block-action-container .bc-block-action a:hover {
+              color: var(--clr-fonts-base); }
+      .bc-block-carousel .bc-block.fade-out {
+        opacity: 0;
+        -webkit-transition: .5s;
+        transition: .5s; }
+      .bc-block-carousel .bc-block.pre-fade-in {
+        position: absolute;
+        opacity: 0;
+        display: block !important; }
+      .bc-block-carousel .bc-block.fade-in {
+        position: relative;
+        opacity: 1;
+        transition: .5s; }
+    .bc-block-carousel .bc-slide-trigger {
+      display: none;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      cursor: pointer; }
+      .bc-block-carousel .bc-slide-trigger .fa {
+        font-size: 38px; }
+      .bc-block-carousel .bc-slide-trigger.left-anchor {
+        padding: .25rem;
+        padding-right: .5rem;
+        left: .25rem; }
+      .bc-block-carousel .bc-slide-trigger.right-anchor {
+        padding: .25rem;
+        padding-right: .5rem;
+        right: .5rem; }
+      .bc-block-carousel .bc-slide-trigger:hover {
+        color: var(--clr-fonts-alt); }
+      .bc-block-carousel .bc-slide-trigger:active {
+        color: var(--clr-fonts-active); }
+    .bc-block-carousel:hover .bc-slide-trigger {
+      display: inline-block; }
+    @media (max-width: 1200px) {
+      .bc-block-carousel .bc-slide-trigger {
+        display: inline-block; } }
+    .bc-block-carousel .bc-nav-dots {
+      position: absolute;
+      bottom: .75rem;
+      left: 0;
+      right: 0;
+      text-align: center;
+      z-index: 10; }
+      .bc-block-carousel .bc-nav-dots .nav-dot {
+        font-size: 11px;
+        color: var(--clr-fonts-inactive);
+        margin: 0 .25rem;
+        padding: .25rem;
+        cursor: pointer; }
+        .bc-block-carousel .bc-nav-dots .nav-dot.selected {
+          color: var(--clr-fonts-base); }
+        .bc-block-carousel .bc-nav-dots .nav-dot:active {
+          color: var(--clr-fonts-active); }
+        .bc-block-carousel .bc-nav-dots .nav-dot:hover {
+          color: var(--clr-fonts-alt); }
+  
